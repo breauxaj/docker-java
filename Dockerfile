@@ -1,6 +1,7 @@
 FROM breauxaj/alpine:latest
 
 RUN apk add openjdk11-jdk \
+  maven \
   && rm -rf /var/cache/apk/*
 
 RUN cd /usr/bin \
